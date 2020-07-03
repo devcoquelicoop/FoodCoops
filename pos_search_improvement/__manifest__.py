@@ -6,17 +6,18 @@
 
 {
     "name": "POS Search Improvement",
-    "version": "12.0.1.0.0",
+    "version": "12.0.2.0.0",
     "category": "Point Of Sale",
     "summary": "Search Exactly Products",
     "author": "La Louve, Druidoo",
     "website": "http://www.lalouve.net",
     'license': 'AGPL-3',
-    "depends": ["point_of_sale", "product"],
+    "depends": [
+        "pos_multi_ean",
+        "pos_accented_search",
+    ],
     "data": [
-        "security/ir.model.access.csv",
-        "views/product_product_view.xml",
-        "static/src/xml/templates.xml",
+        "views/assets.xml",
     ],
     "installable": True,
 }
